@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function Callback</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#img").hide("slow", function(){
+      alert("OHK YOUR IMAGE HIDE NOW ");
+    });
+  });
+});
+</script>
+</head>
+<body>
+    <center>
+        <p> CAN YOU HIDE YOUR IMAGE </p>
+<img id="img" src="https://c4.wallpaperflare.com/wallpaper/787/18/502/cars-hd-widescreen-high-quality-desktop-hd-lamborghini-aventador-high-resolution-cars-disney-desktop-movie-hd-widescreen-quality-hd-wallpaper-preview.jpg" height="500px" width="800px"><br>
+<br>
+<button>Hide</button>
+    </center>
+</body>
+</html>
